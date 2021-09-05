@@ -1,0 +1,138 @@
+/*home*/
+/*menu bootstrap*/
+.fondo{
+    background-image: linear-gradient(#292321, #554242) !important
+}
+header img{
+    padding-left: 20px;
+}
+.color{ 
+    color: #E24844 !important;
+}
+/*Footer*/
+footer{
+        background-image: linear-gradient(#292321, #554242);
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; 
+        padding-bottom: 30px;
+    img{
+        padding-top: 20px;
+    }
+    nav{
+    width: 30%;
+        ul{
+            display: flex;
+            justify-content: space-around;
+            li{
+                list-style-type: none; 
+                    a{ 
+                        text-decoration: none; 
+                    }
+                }
+            }   
+        }
+    }
+
+
+.redes{
+    width: 20%;
+    a{
+    color:#E4B37C;  
+    }
+}
+
+/*sliders bootstrap*/
+.galeria{
+    height: 600px !important;
+}
+/*Sass main*/
+#mainIndex{
+    .containerIntro{
+        &__text{
+                h2{
+                color: $coral;
+                text-align: center;
+                margin: 30px 0;
+            }
+                p{
+                width: 40%;
+                margin: auto;
+                margin-bottom: 50px;   
+                font-style: italic;
+                text-align: center;
+            }
+        }
+        &__video{
+            margin: auto; 
+            width: ($ancho)-100;
+            height: ($alto/2)+20;
+            border: 2px solid grey;
+                iframe{
+                width: ($ancho)-100;
+                height: ($alto/2)+20;
+            }
+        }
+    }
+}
+
+/*Sass iconos*/
+#iconosIndex{
+    background-color: #DFDAE1;
+    margin: 50px 0px;
+
+    .containerTitle__center{
+        color: $turqueza;
+        text-align: center;
+        padding: 50px 0px;
+    }
+    .containerIcon{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        height: ($ancho/2);
+        padding: 0 30px;
+
+        &__info{
+            width: ($ancho/5)+30;
+
+            &--image{
+                padding: 0 25px;
+                transition: 1s;
+                opacity: 50%;
+            }
+            &--image:hover{
+                width: 110px;
+                padding: 5px;
+                opacity: 100%;
+                }
+            &--text{
+                color: darkgray;
+                text-align: center;
+            }
+        }
+    }
+}
+
+/*Sass categorías*/
+#categoriasIndex{
+@include flex(row, center, center);
+    
+    .containerInfo{
+        &__image{
+            height: 220px;
+            }
+        
+        &__text{
+            color: $turqueza;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 20px;
+            padding: 15px 90px;
+            }
+        }
+    }
+
+

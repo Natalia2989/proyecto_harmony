@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/estilos.css">
+    <link rel="stylesheet" href="css/index.css">
   </head>
 <body>
    <header>
@@ -70,68 +70,66 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-   <main>
-       <section id="intro">
-           <div>
-             <h1>Harmony: La solución para tu piel</h1>
-             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-           </div>
-           <div class="video">
-            <iframe width="727" height="409" src="https://www.youtube.com/embed/NYYt-j4yito" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           </div>   
-        </section>
-    </main>
-        <section id="indicaciones">
-            <div>
-                <h2>Tratamientos</h2>
-            </div>
-            <div class="iconos">
-                <div>
-                    <img src="img/rejuvenecimiento.png" alt="rejuvenecimiento"> 
-                    <h3>Rejuvenecimiento</h3>
-                </div>
-                <div>
-                    <img src="img/lesiones-pigmentarias.png" alt="lesiones-pigmentarias"> 
-                    <h3>Lesiones pigmentarias</h3>
-                </div>
-                <div>
-                    <img src="img/tono-y-textura.png" alt="tono-y-textura"> 
-                    <h3>Tono y textura</h3>
-                </div>
-                <div>
-                    <img src="img/tatto.png" alt="tatuajes"> 
-                    <h3>Remoción de tatuajes</h3>
-                </div>
-                <div>
-                    <img src="img/acne.png" alt="acne"> 
-                    <h3>Acné</h3>
-                </div>
-                <div>
-                    <img src="img/lesiones-vasculares.png" alt="lesiones-vasculares"> 
-                    <h3>Lesiones vasculares</h3>
-                </div>
-                <div>
-                    <img src="img/fotodepilacion.png" alt="depilacion"> 
-                    <h3>Fotodepilación</h3>
-                </div>
-            </div>          
-        </section>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/tecnologia.JPG" class="card-img-top" alt="tecnologia">
-                    <div class="card-body">
-                      <a href="tecnologia.html" class="btn btn-secondary">Tecnología</a>
-                    </div>
-                  </div>
-                  <div class="card" style="width: 18rem;">
-                    <img src="img/tratamiento.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <a href="tratamiento.html" class="btn btn-secondary">Tratamiento</a>
-                    </div>
-                  </div>
-            </div>
+  <main id="mainIndex">
+    <section class="containerIntro">
+        <div class="containerIntro__text">
+          <h2>Harmony: La solución para tu piel</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
         </div>
+        <div class="containerIntro__video">
+         <iframe width="727" height="409" src="https://www.youtube.com/embed/NYYt-j4yito" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>   
+     </section>
+ </main>
+     <section id="iconosIndex">
+         <div class="containerTitle">
+             <h2 class="containerTitle__center">Tratamientos</h2>
+         </div>
+         <div class="containerIcon">
+             <div class="containerIcon__info">
+                 <img class="containerIcon__info--image" src="img/rejuvenecimiento.png" alt="rejuvenecimiento"> 
+                 <p class="containerIcon__info--text">Rejuvenecimiento</p>
+             </div>
+             <div class="containerIcon__info">
+                 <img class="containerIcon__info--image" src="img/lesiones-pigmentarias.png" alt="lesiones-pigmentarias"> 
+                 <p class="containerIcon__info--text">Lesiones pigmentarias</p>
+             </div>
+             <div class="containerIcon__info">
+                 <img class="containerIcon__info--image" src="img/tono-y-textura.png" alt="tono-y-textura"> 
+                 <p class="containerIcon__info--text">Tono y textura</p>
+             </div>
+             <div class="containerIcon__info">
+                 <img class="containerIcon__info--image" src="img/tatto.png" alt="tatuajes"> 
+                 <p class="containerIcon__info--text">Remoción de tatuajes</p>
+             </div>
+             <div class="containerIcon__info">
+                 <img class="containerIcon__info--image" src="img/acne.png" alt="acne"> 
+                 <p class="containerIcon__info--text">Acné</p>
+             </div>
+             <div class="containerIcon__info">
+                 <img class="containerIcon__info--image" src="img/lesiones-vasculares.png" alt="lesiones-vasculares"> 
+                 <p class="containerIcon__info--text">Lesiones vasculares</p>
+             </div>
+             <div class="containerIcon__info"> 
+                 <img class="containerIcon__info--image" src="img/fotodepilacion.png" alt="depilacion"> 
+                 <p class="containerIcon__info--text">Fotodepilación</p>
+             </div>
+         </div>          
+     </section>
+     <section id="categoriasIndex">     
+             <div class="containerInfo">
+                     <a href="tecnologia.html"> 
+                     <img class="containerInfo__image" src="img/tecnologia.jpg" alt="equipo-medico">
+                     </a>
+                 <h2 class="containerInfo__text">Tecnología</h2>
+             </div>
+             <div class="containerInfo">
+                     <a href="tratamiento.html"> 
+                     <img class="containerInfo__image" src="img/tratamiento.jpg" alt="chica-tratamiento">
+                     </a>
+                 <h2 class="containerInfo__text">Tratamiento</h2>
+             </div>
+     </section>
     <footer>
             <div>
                 <a href="#inicio">
@@ -140,10 +138,10 @@
             </div>
             <nav>
                 <ul>
-                 <li> <a href="tratamiento.html"> Tratamiento </a> </li>
-                 <li> <a href="tecnologia.html"> Tecnología </a></li>
-                 <li> <a href="centros-medicos.html"> Centros Médicos </a></li>
-                 <li> <a href="contacto.html"> Contacto </a></li>
+                 <li> <a class="color" href="tratamiento.html"> Tratamiento </a> </li>
+                 <li> <a class="color" href="tecnologia.html"> Tecnología </a></li>
+                 <li> <a class="color" href="centros-medicos.html"> Centros </a></li>
+                 <li> <a class="color" href="contacto.html"> Contacto </a></li>
                 </ul>
             </nav> 
             <nav class="redes">
