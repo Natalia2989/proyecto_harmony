@@ -1,5 +1,6 @@
 /*tecnologia*/
-#tecnologia h1{
+#tecnologia{
+    h1{
     color:#E77843;
     text-align: center;
     margin: 50px 0;
@@ -7,7 +8,16 @@
     font-size: 50px;
     animation-duration: 10s;
     animation-name: gradual;
-}
+    }
+    p{
+        text-align: center;
+        font-style: italic;
+    }
+    img{ 
+        display: block;
+        margin: 0 auto;
+    }
+} 
 @keyframes gradual {
     0% {
         opacity: 0;
@@ -16,11 +26,4 @@
         opacity: 5;
     }
     }
-#tecnologia p{
-    text-align: center;
-    font-style: italic;
-}
-#tecnologia img{ 
-    display: block;
-    margin: 0 auto;
-}
+
