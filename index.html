@@ -23,8 +23,18 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link color" aria-current="page" href="tratamiento.html">Tratamiento</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle color" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tratamiento
+                </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Rejuvenecimiento</a></li>
+                    <li><a class="dropdown-item" href="tono-y-textura.html">Tono y textura</a></li>
+                    <li><a class="dropdown-item" href="#">Lesiones pigmentarias</a></li>
+                    <li><a class="dropdown-item" href="#">Lesiones vasculares</a></li>
+                    <li><a class="dropdown-item" href="#">Acné y cicatrices</a></li>
+                    <li><a class="dropdown-item" href="#">Tratamientos adicionales</a></li>
+                  </ul>
               </li>             
               <li class="nav-item">
                 <a class="nav-link color" aria-current="page" href="tecnologia.html">Tecnología</a>
@@ -47,7 +57,7 @@
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
     </div>
-    <div class="carousel-inner galeria">
+    <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="img/adulto-mayor.jpg" class="d-block w-100" alt="mujer-mayor">
       </div>
@@ -74,7 +84,7 @@
     <section class="containerIntro">
         <div class="containerIntro__text">
           <h2>Harmony: La solución para tu piel</h1>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <p>Harmony es la plataforma Láser y Luz Pulsada Intensa para lucir una piel jóven y perfecta. Combina un completo espectro de indicaciones estéticas, innovadoras tecnologías y excelentes resultados clínicos para crear una completa armonía.</p>
         </div>
         <div class="containerIntro__video">
          <iframe width="727" height="409" src="https://www.youtube.com/embed/NYYt-j4yito" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -91,24 +101,28 @@
                  <p class="containerIcon__info--text">Rejuvenecimiento</p>
              </div>
              <div class="containerIcon__info">
+                <img class="containerIcon__info--image" src="img/tono-y-textura.png" alt="tono-y-textura"> 
+                <p class="containerIcon__info--text">Tono y textura</p>
+              </div>
+             <div class="containerIcon__info">
                  <img class="containerIcon__info--image" src="img/lesiones-pigmentarias.png" alt="lesiones-pigmentarias"> 
                  <p class="containerIcon__info--text">Lesiones pigmentarias</p>
              </div>
              <div class="containerIcon__info">
-                 <img class="containerIcon__info--image" src="img/tono-y-textura.png" alt="tono-y-textura"> 
-                 <p class="containerIcon__info--text">Tono y textura</p>
-             </div>
+                <img class="containerIcon__info--image" src="img/lesiones-vasculares.png" alt="lesiones-vasculares"> 
+                <p class="containerIcon__info--text">Lesiones vasculares</p>
+              </div>
+              <div class="containerIcon__info">
+                <img class="containerIcon__info--image" src="img/acne.png" alt="acne"> 
+                <p class="containerIcon__info--text">Acné</p>
+              </div>
+              <div class="containerIcon__info">
+                <img class="containerIcon__info--image" src="img/cicatrices.png" alt="acne"> 
+                <p class="containerIcon__info--text">Cicatrices</p>
+              </div>
              <div class="containerIcon__info">
                  <img class="containerIcon__info--image" src="img/tatto.png" alt="tatuajes"> 
                  <p class="containerIcon__info--text">Remoción de tatuajes</p>
-             </div>
-             <div class="containerIcon__info">
-                 <img class="containerIcon__info--image" src="img/acne.png" alt="acne"> 
-                 <p class="containerIcon__info--text">Acné</p>
-             </div>
-             <div class="containerIcon__info">
-                 <img class="containerIcon__info--image" src="img/lesiones-vasculares.png" alt="lesiones-vasculares"> 
-                 <p class="containerIcon__info--text">Lesiones vasculares</p>
              </div>
              <div class="containerIcon__info"> 
                  <img class="containerIcon__info--image" src="img/fotodepilacion.png" alt="depilacion"> 
@@ -130,28 +144,28 @@
                  <h2 class="containerInfo__text">Tratamiento</h2>
              </div>
      </section>
-    <footer>
-            <div>
-                <a href="#inicio">
-                    <img src="img/logo-harmony.png" alt="logo">  
-                </a>    
-            </div>
-            <nav>
-                <ul>
-                 <li> <a class="color" href="tratamiento.html"> Tratamiento </a> </li>
-                 <li> <a class="color" href="tecnologia.html"> Tecnología </a></li>
-                 <li> <a class="color" href="centros-medicos.html"> Centros </a></li>
-                 <li> <a class="color" href="contacto.html"> Contacto </a></li>
-                </ul>
-            </nav> 
-            <nav class="redes">
-                <ul>
-                    <li><a href="https://www.facebook.com/SirexMedica">Facebook</a></li>
-                    <li><a href="https://www.instagram.com/sirexmedica/">Instagram</a></li>
-                    <li><a href="https://www.youtube.com/user/Sirexmedica">YouTube</a></li>
-                </ul>
-            </nav>
-    </footer>   
+     <footer>
+      <div>
+          <a href="#inicio">
+              <img src="img/logo-harmony.png" alt="logo">  
+          </a>    
+      </div>
+      <nav class="menu-principal">
+          <ul>
+            <li> <a class="color" href="tratamiento.html"> Tratamiento </a> </li>
+            <li> <a class="color" href="tecnologia.html"> Tecnología </a></li>
+            <li> <a class="color" href="centros-medicos.html"> Centros </a></li>
+            <li> <a class="color" href="contacto.html"> Contacto </a></li>
+          </ul>
+      </nav> 
+      <nav class="redes">
+          <ul>
+              <li><a href="https://www.facebook.com/SirexMedica">Facebook</a></li>
+              <li><a href="https://www.instagram.com/sirexmedica/">Instagram</a></li>
+              <li><a href="https://www.youtube.com/user/Sirexmedica">YouTube</a></li>
+          </ul>
+      </nav>
+  </footer> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>

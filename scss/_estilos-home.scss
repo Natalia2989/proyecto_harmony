@@ -9,74 +9,29 @@ header img{
 .color{ 
     color: #E24844 !important;
 }
-/*Footer*/
-footer{
-        background-image: linear-gradient(#292321, #554242);
-        height: 160px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center; 
-        padding-bottom: 30px;
-    img{
-        padding-top: 20px;
-    }
-    nav{
-    width: 30%;
-        ul{
-            display: flex;
-            justify-content: space-around;
-            li{
-                list-style-type: none; 
-                    a{ 
-                        text-decoration: none; 
-                    }
-                }
-            }   
-        }
-    }
-
-
-.redes{
-    width: 20%;
-    a{
-    color:#E4B37C;  
-    }
-}
-
-/*sliders bootstrap*/
-.galeria{
-    height: 600px !important;
-}
 /*Sass main*/
 #mainIndex{
     .containerIntro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         &__text{
                 h2{
                 color: $coral;
                 text-align: center;
-                margin: 30px 0;
+                margin: 30px 20px;
             }
                 p{
-                width: 40%;
+                width: 50%;
                 margin: auto;
                 margin-bottom: 50px;   
                 font-style: italic;
                 text-align: center;
             }
         }
-        &__video{
-            margin: auto; 
-            width: ($ancho)-100;
-            height: ($alto/2)+20;
-            border: 2px solid grey;
-                iframe{
-                width: ($ancho)-100;
-                height: ($alto/2)+20;
-            }
-        }
     }
 }
+
 
 /*Sass iconos*/
 #iconosIndex{
@@ -90,9 +45,8 @@ footer{
     }
     .containerIcon{
         display: flex;
-        flex-flow: row wrap;
         justify-content: space-evenly;
-        height: ($ancho/2);
+        height: 250px;
         padding: 0 30px;
 
         &__info{
@@ -119,7 +73,6 @@ footer{
 /*Sass categorías*/
 #categoriasIndex{
 @include flex(row, center, center);
-    
     .containerInfo{
         &__image{
             height: 220px;
@@ -129,10 +82,93 @@ footer{
             color: $turqueza;
             font-weight: 400;
             text-transform: uppercase;
-            font-size: 20px;
-            padding: 15px 90px;
+            font-size: 1.5rem;
+            padding: 15px 0;
+            text-align: center;
             }
         }
     }
 
+/*Responsive*/
+@media screen and (max-width: 1024px){
+#iconosIndex{
+        .containerIcon{
+            flex-wrap: wrap;
+            padding: 0 40px;
+            height: 350px;
+            column-gap: 40px;
+        }
+    }
+}
 
+@media screen and (max-width: 768px){
+    #iconosIndex{
+        .containerIcon{
+            flex-wrap: wrap;
+            padding: 0 80px;
+            height: 600px;
+            column-gap: 60px;
+        }
+    }
+    .containerIntro{
+        &__video{
+            width: 400px;
+            height: 225px;
+            iframe{
+                width: 400px;
+                height: 225px;  
+            }
+        }      
+    }
+    #categoriasIndex{
+        .containerInfo{
+            &__image{
+                height: 140px;
+            }
+            &__text{
+                font-size: 1rem;
+            }
+        }    
+    }
+}
+@media screen and (max-width: 480px){
+    #iconosIndex{
+        .containerTitle__center{
+            padding: 30px 0px;
+        }
+        .containerIcon{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 1200px;
+        }
+    }
+    #mainIndex{
+        .containerIntro{
+            &__text{
+                p{
+                width: 70%;
+                margin: auto;
+                margin-bottom: 50px;   
+                }
+            }
+            &__video{
+                width: 300px;
+                height: 169px;
+                iframe{
+                    width: 300px;
+                    height: 169px;  
+                }
+            } 
+        }
+    }
+    #categoriasIndex{
+        display: flex;
+        flex-direction: column;
+        .containerInfo{
+            &__image{
+                height: 180px;
+            }
+        }    
+    } 
+}       
