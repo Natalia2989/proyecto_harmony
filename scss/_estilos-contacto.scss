@@ -1,9 +1,23 @@
 /*contacto*/
 #contacto{ 
+    .container{
+        font-size: 3rem !important;
+    }
     h1{
     color: #1FBEA2 !important;
+    font-size: 3.5rem;
     }
     h2{
     color: #1C74A2 !important;
+    font-size: 1.5rem !important;
+    }  
+    label{
+        font-size: 1.5rem;
+    }
+    input{
+        font-size: 1.2rem;
+    }
+    button{
+        font-size: 1.5rem;
     }
 }

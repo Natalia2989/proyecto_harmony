@@ -1,7 +1,8 @@
 /*home*/
 /*menu bootstrap*/
 .fondo{
-    background-image: linear-gradient(#292321, #554242) !important
+    background-color: $marron !important;
+    font-size: 1.5rem;
 }
 header img{
     padding-left: 20px;
@@ -9,7 +10,7 @@ header img{
 .color{ 
     color: #E24844 !important;
 }
-/*Sass main*/
+/*Main video*/
 #mainIndex{
     .containerIntro{
         display: flex;
@@ -20,6 +21,7 @@ header img{
                 color: $coral;
                 text-align: center;
                 margin: 30px 20px;
+                font-size: 2.5rem;
             }
                 p{
                 width: 50%;
@@ -27,13 +29,14 @@ header img{
                 margin-bottom: 50px;   
                 font-style: italic;
                 text-align: center;
+                font-size: 1.5rem;
             }
         }
     }
 }
 
 
-/*Sass iconos*/
+/*Iconos*/
 #iconosIndex{
     background-color: #DFDAE1;
     margin: 50px 0px;
@@ -42,15 +45,17 @@ header img{
         color: $turqueza;
         text-align: center;
         padding: 50px 0px;
+        font-size: 2.5rem;
     }
     .containerIcon{
         display: flex;
         justify-content: space-evenly;
         height: 250px;
         padding: 0 30px;
+        font-size: 1.5rem;
 
         &__info{
-            width: ($ancho/5)+30;
+            width: 130px;
 
             &--image{
                 padding: 0 25px;
@@ -70,7 +75,7 @@ header img{
     }
 }
 
-/*Sass categorías*/
+/*Categorías*/
 #categoriasIndex{
 @include flex(row, center, center);
     .containerInfo{
@@ -82,7 +87,7 @@ header img{
             color: $turqueza;
             font-weight: 400;
             text-transform: uppercase;
-            font-size: 1.5rem;
+            font-size: 2rem;
             padding: 15px 0;
             text-align: center;
             }
@@ -126,7 +131,7 @@ header img{
                 height: 140px;
             }
             &__text{
-                font-size: 1rem;
+                font-size: 1.5rem;
             }
         }    
     }
@@ -172,3 +177,4 @@ header img{
         }    
     } 
 }       
+/*Fin responsive*/

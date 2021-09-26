@@ -12,62 +12,73 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fondo">
-   <div class="container-fluid">
-     <a class="navbar-brand" href="index.html"> <img src="img/logo-harmony.png" alt="logo">  </a>
-     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle color" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Tratamiento
-          </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Rejuvenecimiento</a></li>
-              <li><a class="dropdown-item" href="tono-y-textura.html">Tono y textura</a></li>
-              <li><a class="dropdown-item" href="#">Lesiones pigmentarias</a></li>
-              <li><a class="dropdown-item" href="#">Lesiones vasculares</a></li>
-              <li><a class="dropdown-item" href="#">Acné y cicatrices</a></li>
-              <li><a class="dropdown-item" href="#">Tratamientos adicionales</a></li>
-            </ul>
-        </li> 
-         <li class="nav-item">
-           <a class="nav-link color" aria-current="page" href="tecnologia.html">Tecnología</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link color" href="centros-medicos.html">Centros</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link color" href="contacto.html">Contacto</a>
-         </li>
-       </ul>
-     </div>
-   </div>
- </nav>
-</header> 
 <body>
-    <div id="contacto" class="container" style="width: 32rem;"> 
-        <h1 class="mt-4">Dejanos tu consulta</h1>
-          <h2 class="mt-4 fs-6">A la brevedad nos comunicaremos para poder asesorarte</h2>
-        <form>
-            <div class="row g-3 my-4">
-                <div class="col">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fondo">
+     <div class="container-fluid">
+       <a class="navbar-brand" href="index.html"> <img src="img/logo-harmony.png" alt="logo">  </a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+         <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle color" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tratamiento
+            </a>
+              <ul class="dropdown-menu fondo" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item color" href="rejuvenecimiento.html">Rejuvenecimiento</a></li>
+                <li><a class="dropdown-item color" href="tono-y-textura.html">Tono y textura</a></li>
+                <li><a class="dropdown-item color" href="lesiones-pigmentarias.html">Lesiones pigmentarias</a></li>
+                <li><a class="dropdown-item color" href="lesiones-vasculares.html">Lesiones vasculares</a></li>
+                <li><a class="dropdown-item color" href="acne-y-cicatrices.html">Acné y cicatrices</a></li>
+              </ul>
+          </li>              
+           <li class="nav-item">
+             <a class="nav-link color" aria-current="page" href="tecnologia.html">Tecnología</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link color" href="centros-medicos.html">Centros</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link color" href="contacto.html">Contacto</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+  </header>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/harmony.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+    <div id="contacto" class="container"> 
+      <div class="row justify-content-center">
+          <h1 class="mt-4 col-lg-12 text-center">Dejanos tu consulta</h1>
+          <h2 class="mt-4 fs-6 col-8 col-sm-12 text-center">A la brevedad nos comunicaremos para poder asesorarte</h2>
+        </div>
+          <form>
+            <div class="row justify-content-center g-3 my-4">
+                <div class="col-8 col-sm-5 col-md-4">
                   <label for="exampleFormControlInput1" class="form-label">Nombre</label>
                   <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
                 </div>
-                <div class="col">
+                <div class="col-8 col-sm-5 col-md-4">
                   <label for="exampleFormControlInput1" class="form-label">Apellido</label>
                   <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
                 </div>
-                <div class="mb-3">
+                <div class="col-8 col-sm-10 col-md-8 mb-3">
                   <label for="exampleFormControlInput1" class="form-label">Email</label>
                   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
                 </div>
-              </div>
             <fieldset class="row mb-3">
-              <legend class="col-form-label col-sm-2 pt-0">Seleccione su consulta</legend>
-              <div class="col-sm-10">
+                <legend class="col-form-label col-2 pt-0"></legend>
+                <div class="col-10">
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                   <label class="form-check-label" for="gridRadios1">
@@ -89,7 +100,7 @@
               </div>
             </fieldset>
             <div class="row mb-3">
-              <div class="col-sm-10 offset-sm-2">
+              <div class="col-10 offset-2">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" id="gridCheck1">
                   <label class="form-check-label" for="gridCheck1">
@@ -98,11 +109,14 @@
                 </div>
               </div>
             </div>
-            <div class="mb-3">
+            <div class="mb-3 col-8 col-sm-10 col-md-8">
               <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary mb-4">Enviar</button>
+          </div>
+          <div class="row justify-content-center">
+            <button type="submit" class="btn btn-primary mb-4 col-3 col-sm-2 col-lg-1 col-xl-1">Enviar</button>
+          </div>
           </form>
       </div>
       <footer>
@@ -112,19 +126,20 @@
             </a>    
         </div>
         <nav class="menu-principal">
-            <ul>
-              <li> <a class="color" href="tratamiento.html"> Tratamiento </a> </li>
-              <li> <a class="color" href="tecnologia.html"> Tecnología </a></li>
-              <li> <a class="color" href="centros-medicos.html"> Centros </a></li>
-              <li> <a class="color" href="contacto.html"> Contacto </a></li>
-            </ul>
+          <ul>
+            <li> <a class="color" href="tratamiento.html"> Tratamiento </a> </li>
+            <li> <a class="color" href="tecnologia.html"> Tecnología </a></li>
+            <li> <a class="color" href="centros-medicos.html"> Centros </a></li>
+            <li> <a class="color" href="contacto.html"> Contacto </a></li>
+          </ul>
         </nav> 
         <nav class="redes">
-            <ul>
-                <li><a href="https://www.facebook.com/SirexMedica">Facebook</a></li>
-                <li><a href="https://www.instagram.com/sirexmedica/">Instagram</a></li>
-                <li><a href="https://www.youtube.com/user/Sirexmedica">YouTube</a></li>
-            </ul>
+          <ul>
+            <li><a href="https://www.facebook.com/SirexMedica"><img src="img/icono_fb.svg" alt="facebook"></a></li>
+            <li><a href="https://www.instagram.com/sirexmedica/"><img src="img/icono_ig.svg" alt="instagram"></a></li>
+            <li><a href="https://www.youtube.com/user/Sirexmedica"><img src="img/icono_youtube.svg" alt="youtube"></a></li>
+            <li><a href="https://ar.linkedin.com/company/sirexmedica"><img src="img/icono_linkedin.svg" alt="linkedin"></a></li>
+          </ul>
         </nav>
     </footer> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> 

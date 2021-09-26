@@ -6,6 +6,7 @@ footer{
     justify-content: space-around;
     align-items: center; 
     padding: 15px;
+    font-size: 1.5rem;
 img{
     padding-left: 0;
 }
@@ -28,14 +29,18 @@ img{
     width: 20%;
         ul{
             display: flex;
-            justify-content: space-around;
-            column-gap: 15px;  
+            justify-content: center;
+            column-gap: 20px;  
             padding-left: 0;
         li{
             list-style-type: none;  
                 a{
                     color:#E4B37C;
-                    text-decoration: none;   
+                    text-decoration: none;
+                        img{
+                            width: 25px;
+                            height: 25px;
+                        }
                 }
             }
         }
