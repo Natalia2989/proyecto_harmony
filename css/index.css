@@ -553,28 +553,173 @@ header img {
 
 /*Fin Resposive tratamiento*/
 /*tecnologia*/
-#tecnologia h1 {
-  color: #E77843;
-  text-align: center;
-  margin: 50px 0;
-  font-weight: 300;
-  font-size: 50px;
+.grilla {
+  display: grid; }
+
+.tecnologia {
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(20, 180px); }
+
+.banner-equipos {
+  grid-column: 1 / 13;
+  grid-row: 1 / 4;
+  background-image: url("../img/tecno-equipos.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   animation-duration: 2s;
   animation-name: gradual; }
-
-#tecnologia p {
-  text-align: center;
-  font-style: italic; }
-
-#tecnologia img {
-  display: block;
-  margin: 0 auto; }
+  .banner-equipos h1 {
+    color: #E24844;
+    text-align: center;
+    margin: 50px 0;
+    font-weight: 300;
+    font-size: 5rem; }
 
 @keyframes gradual {
   0% {
     opacity: 0; }
   100% {
     opacity: 5; } }
+
+.contenedor-piezas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px; }
+  .contenedor-piezas h2 {
+    font-size: 2.5rem; }
+  .contenedor-piezas p {
+    width: 60%;
+    font-size: 1.5rem;
+    text-align: center; }
+  .contenedor-piezas .piezas {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    justify-content: center; }
+  .contenedor-piezas ul {
+    width: 70%; }
+  .contenedor-piezas li {
+    font-size: 1.4rem; }
+
+#luz-aft {
+  grid-column: 1 / 13;
+  grid-row: 4 / 9;
+  background-color: #fc999d; }
+
+#laser-nd {
+  grid-column: 1 / 13;
+  grid-row: 9 / 13;
+  background-color: #fdc688; }
+
+#laser-er {
+  grid-column: 1 / 13;
+  grid-row: 13 / 17;
+  background-color: #9cbdbb; }
+
+#nir {
+  grid-column: 1 / 13;
+  grid-row: 17 / 21;
+  background-color: #afdaaf; }
+
+@media screen and (max-width: 1024px) {
+  .banner-equipos {
+    grid-column: 1 / 13;
+    grid-row: 1 / 4; }
+    .banner-equipos h1 {
+      font-size: 3rem; }
+  .contenedor-piezas p {
+    width: 80%; }
+  .tecnologia {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(25, 140px); }
+  #luz-aft {
+    grid-column: 1 / 13;
+    grid-row: 4 / 11;
+    background-color: #fc999d; }
+  #laser-nd {
+    grid-column: 1 / 13;
+    grid-row: 11 / 16;
+    background-color: #fdc688; }
+  #laser-er {
+    grid-column: 1 / 13;
+    grid-row: 16 / 21;
+    background-color: #9cbdbb; }
+  #nir {
+    grid-column: 1 / 13;
+    grid-row: 21 / 26;
+    background-color: #afdaaf; } }
+
+@media screen and (max-width: 768px) {
+  .banner-equipos {
+    grid-column: 1 / 13;
+    grid-row: 1 / 3; }
+    .banner-equipos h1 {
+      margin: 20px 0;
+      font-size: 2rem; }
+  .tecnologia {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(42, 140px); }
+  .contenedor-piezas .piezas {
+    display: flex;
+    flex-direction: column;
+    column-gap: 5px;
+    align-items: center;
+    justify-content: center; }
+  .contenedor-piezas p {
+    width: 80%; }
+  .contenedor-piezas img {
+    width: 140px; }
+  #luz-aft {
+    grid-column: 1 / 13;
+    grid-row: 3 / 17;
+    background-color: #fc999d; }
+  #laser-nd {
+    grid-column: 1 / 13;
+    grid-row: 17 / 27;
+    background-color: #fdc688; }
+  #laser-er {
+    grid-column: 1 / 13;
+    grid-row: 27 / 36;
+    background-color: #9cbdbb; }
+  #nir {
+    grid-column: 1 / 13;
+    grid-row: 36 / 43;
+    background-color: #afdaaf; } }
+
+@media screen and (max-width: 480px) {
+  .tecnologia {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(58, 110px); }
+  .banner-equipos {
+    grid-column: 1 / 13;
+    grid-row: 1 / 3; }
+    .banner-equipos h1 {
+      margin: 10px 0;
+      font-size: 1.5rem; }
+  #luz-aft {
+    grid-column: 1 / 13;
+    grid-row: 3 / 22;
+    background-color: #fc999d; }
+    #luz-aft h2 {
+      padding: 0 10px;
+      text-align: center; }
+  #laser-nd {
+    grid-column: 1 / 13;
+    grid-row: 22 / 36;
+    background-color: #fdc688; }
+  #laser-er {
+    grid-column: 1 / 13;
+    grid-row: 36 / 49;
+    background-color: #9cbdbb; }
+  #nir {
+    grid-column: 1 / 13;
+    grid-row: 49 / 59;
+    background-color: #afdaaf; } }
 
 /*centros medicos*/
 .fondo-centros {
